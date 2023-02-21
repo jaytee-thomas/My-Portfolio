@@ -1,0 +1,81 @@
+<app-loading></app-loading>
+<div class="page-wraper">
+	<!-- header -->
+    <app-header1 [data]="profile"></app-header1>
+    <!-- header END -->
+	<app-page-banner [data]="page_banner"></app-page-banner>
+  <app-social-bar></app-social-bar>
+	
+	<div class="content-body">
+		<div class="content-body-inner">
+			
+			<!-- About Info -->
+			<div class="section-full">
+				<div class="section-head">
+					<h2 class="title text-uppercase">How Can I <span class="text-gradient">Help You</span>?</h2>
+				</div>
+				<div class="contact-form">
+					<form method="post" class="dzForm dezPlaceAni" action="script/contact.php">
+						<div class="dzFormMsg"></div>
+						<input type="hidden" value="Contact" name="dzToDo" >
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<i class="las la-user text-gradient"></i>
+									<label>Your Name</label>
+									<input name="dzName" type="text" required class="form-control ">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<i class="las la-envelope-open text-gradient"></i>
+									<label>Your Email Address</label>
+									<input name="dzEmail" type="email" class="form-control" required >
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<i class="las la-phone-volume text-gradient"></i>
+									<label>Phone Number</label>
+									<input name="dzPhone" type="text" required class="form-control ">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<i class="las la-file-alt text-gradient"></i>
+									<label>Subject</label>
+									<input name="dzSubject" type="text" class="form-control" required >
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="form-group">
+									<i class="las la-envelope-open text-gradient"></i>
+									<label>Your Message</label>
+									<textarea name="dzMessage" rows="4" class="form-control" required ></textarea>
+								</div>
+							</div>
+							<div class="col-md-12 m-b20 m-xs-b0 ">
+								<div class="g-recaptcha" data-sitekey="6LefsVUUAAAAADBPsLZzsNnETChealv6PYGzv3ZN" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+								<input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
+							</div>
+							<div class="col-md-12">
+								<button name="submit" type="submit" value="Submit" class="site-button button-gradient button-md radius-no">Send Message</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+			<!-- Contact Info -->
+			<div class="section-full content-inner">
+				<app-icon-box></app-icon-box>
+			</div>
+			
+			<!-- Map -->
+			<div class="section-full maps">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14445.871196953145!2d75.8417313!3d25.153677599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1580295328844!5m2!1sen!2sin" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+			</div>
+			
+		</div>
+	</div>
+</div>

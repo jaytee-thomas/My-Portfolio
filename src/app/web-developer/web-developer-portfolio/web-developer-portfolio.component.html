@@ -1,0 +1,182 @@
+<app-loading></app-loading>
+<div class="page-wraper">
+	<!-- header -->
+    <app-header1 [data]="profile"></app-header1>
+    <!-- header END -->
+	<app-page-banner [data]="page_banner"></app-page-banner>
+  <app-social-bar></app-social-bar>
+	
+	<div class="content-body">
+		<div class="content-body-inner">
+			<!-- About Info -->
+			<div class="section-full">
+				
+			</div>
+			<div class="section-full">
+				<div class="section-head m-b20">
+					<h2 class="title text-uppercase">Some of My  <span class="text-gradient">Creative Works</span></h2>
+				</div>
+				<div class="site-filters clearfix">
+					<ul class="filters" data-toggle="buttons">
+						<li data-filter="" class="btn active">
+							<input type="radio">
+							<a href="javascript:void(0);" class="site-button-link"><span>All</span></a> 
+						</li>
+            <!-- <ng-template ngFor let-category [ngForOf]="categories">
+						<li class="btn" data-filter = '{{category.filter_title}}'>
+							<input type="radio">
+							<a href="javascript:void(0);" class="site-button-link"><span>{{category.title}}</span></a> 
+						</li>
+            </ng-template> -->
+						 <li data-filter = "design" class="btn">
+							<input type="radio">
+							<a href="javascript:void(0);" class="site-button-link"><span>Design</span></a> 
+						</li>
+						<li data-filter = "photography" class="btn">
+							<input type="radio">
+							<a href="javascript:void(0);" class="site-button-link"><span>Photography</span></a> 
+						</li>
+						<li data-filter = "development" class="btn">
+							<input type="radio">
+							<a href="javascript:void(0);" class="site-button-link"><span>Development</span></a> 
+						</li> 
+					</ul>
+				</div>
+				<div class="clearfix">
+					<ul id="masonry" class="dlab-gallery-listing gallery lightgallery row sp40">
+						<ng-template ngFor let-portfolio [ngForOf]="portfolios">
+            <li class="card-container col-xl-4 col-lg-6 col-md-6 col-sm-6 {{portfolio.filter_class}} wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.6s">
+							<div class="dlab-box dlab-gallery-box">
+								<div class="dlab-media">
+									<img src="assets/images/gallery/common/{{portfolio.image}}" alt=""/>
+                  
+									<span data-exthumbimage="assets/images/gallery/common/{{portfolio.image}}" data-src="assets/images/gallery/common/orignal/{{portfolio.src_image}}" class="check-km" title="{{portfolio.title}}">
+                  
+										<i class="la la-plus"></i> 
+									</span>
+								</div>
+								<div class="dlab-info">
+									<h4 class="title">{{portfolio.title}}</h4>
+									<span>{{portfolio.category}}</span>
+								</div>
+							</div>
+						</li>
+            </ng-template>
+						<!-- <li class="card-container col-xl-4 col-lg-6 col-sm-6 design wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.4s">
+							<div class="dlab-box dlab-gallery-box">
+								<div class="dlab-media">
+									<img src="assets/images/gallery/common/pic2.jpg" alt=""/>
+									<span data-exthumbimage="assets/images/gallery/common/pic2.jpg" data-src="assets/images/gallery/common/orignal/main-pic2.jpg" class="check-km" title="Design">		
+										<i class="la la-plus"></i> 
+									</span>
+								</div>
+								<div class="dlab-info">
+									<h4 class="title">MOCKUP COLLECTION</h4>
+									<span>DESIGN</span>
+								</div>
+							</div>
+						</li>
+						<li class="card-container col-xl-4 col-lg-6 col-sm-6 development photography wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+							<div class="dlab-box dlab-gallery-box">
+								<div class="dlab-media">
+									<img src="assets/images/gallery/common/pic3.jpg" alt=""/>
+									<span data-exthumbimage="assets/images/gallery/common/pic3.jpg" data-src="assets/images/gallery/common/orignal/main-pic3.jpg" class="check-km" title="Design">		
+										<i class="la la-plus"></i> 
+									</span>
+								</div>
+								<div class="dlab-info">
+									<h4 class="title">MOCKUP COLLECTION</h4>
+									<span>DESIGN</span>
+								</div>
+							</div>
+						</li>
+						<li class="card-container col-xl-4 col-lg-6 col-sm-6 design wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1.6s">
+							<div class="dlab-box dlab-gallery-box">
+								<div class="dlab-media">
+									<img src="assets/images/gallery/common/pic4.jpg" alt=""/>
+									<span data-exthumbimage="assets/images/gallery/common/pic4.jpg" data-src="assets/images/gallery/common/orignal/main-pic4.jpg" class="check-km" title="Design">		
+										<i class="la la-plus"></i> 
+									</span>
+								</div>
+								<div class="dlab-info">
+									<h4 class="title">MOCKUP COLLECTION</h4>
+									<span>DESIGN</span>
+								</div>
+							</div>
+						</li>
+						<li class="card-container col-xl-4 col-lg-6 col-sm-6 photography wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1.4s">
+							<div class="dlab-box dlab-gallery-box">
+								<div class="dlab-media">
+									<img src="assets/images/gallery/common/pic5.jpg" alt=""/>
+									<span data-exthumbimage="assets/images/gallery/common/pic5.jpg" data-src="assets/images/gallery/common/orignal/main-pic5.jpg" class="check-km" title="Design">		
+										<i class="la la-plus"></i> 
+									</span>
+								</div>
+								<div class="dlab-info">
+									<h4 class="title">MOCKUP COLLECTION</h4>
+									<span>DESIGN</span>
+								</div>
+							</div>
+						</li>
+						<li class="card-container col-xl-4 col-lg-6 col-sm-6 design wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1.2s">
+							<div class="dlab-box dlab-gallery-box">
+								<div class="dlab-media">
+									<img src="assets/images/gallery/common/pic6.jpg" alt=""/>
+									<span data-exthumbimage="assets/images/gallery/common/pic6.jpg" data-src="assets/images/gallery/common/orignal/main-pic6.jpg" class="check-km" title="Design">		
+										<i class="la la-plus"></i> 
+									</span>
+								</div>
+								<div class="dlab-info">
+									<h4 class="title">MOCKUP COLLECTION</h4>
+									<span>DESIGN</span>
+								</div>
+							</div>
+						</li>
+						<li class="card-container col-xl-4 col-lg-6 col-sm-6 development photography wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1.8s">
+							<div class="dlab-box dlab-gallery-box">
+								<div class="dlab-media">
+									<img src="assets/images/gallery/common/pic7.jpg" alt=""/>
+									<span data-exthumbimage="assets/images/gallery/common/pic7.jpg" data-src="assets/images/gallery/common/orignal/main-pic7.jpg" class="check-km" title="Design">		
+										<i class="la la-plus"></i> 
+									</span>
+								</div>
+								<div class="dlab-info">
+									<h4 class="title">MOCKUP COLLECTION</h4>
+									<span>DESIGN</span>
+								</div>
+							</div>
+						</li>
+						<li class="card-container col-xl-4 col-lg-6 col-sm-6 design wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1.6s">
+							<div class="dlab-box dlab-gallery-box">
+								<div class="dlab-media">
+									<img src="assets/images/gallery/common/pic8.jpg" alt=""/>
+									<span data-exthumbimage="assets/images/gallery/common/pic8.jpg" data-src="assets/images/gallery/common/orignal/main-pic8.jpg" class="check-km" title="Design">		
+										<i class="la la-plus"></i> 
+									</span>
+								</div>
+								<div class="dlab-info">
+									<h4 class="title">MOCKUP COLLECTION</h4>
+									<span>DESIGN</span>
+								</div>
+							</div>
+						</li>
+						<li class="card-container col-xl-4 col-lg-6 col-sm-6 development photography wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1.4s">
+							<div class="dlab-box dlab-gallery-box">
+								<div class="dlab-media">
+									<img src="assets/images/gallery/common/pic9.jpg" alt=""/>
+									<span data-exthumbimage="assets/images/gallery/common/pic9.jpg" data-src="assets/images/gallery/common/orignal/main-pic9.jpg" class="check-km" title="Design">		
+										<i class="la la-plus"></i> 
+									</span>
+								</div>
+								<div class="dlab-info">
+									<h4 class="title">MOCKUP COLLECTION</h4>
+									<span>DESIGN</span>
+								</div>
+							</div>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
