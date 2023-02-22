@@ -28,7 +28,7 @@
               "src/assets/css/style.css",
               "src/assets/css/templete.css",
               "src/assets/css/skin/skin-1.css",
-              "src/assets/plugins/kenbern/slippry.css",
+              "src/assets/plugins/kenbern/slippry.css"
             ],
             "scripts": [
                   "src/assets/js/jquery.min.js",
@@ -49,7 +49,7 @@
                   "src/assets/plugins/particles/particles.app.js",
                   "src/assets/plugins/ripples/jquery.ripples.js",
                   "src/assets/plugins/switcher/switcher.js",
-                  "src/assets/js/custom.js",
+                  "src/assets/js/custom.js"
                   ]
           },
           "configurations": {

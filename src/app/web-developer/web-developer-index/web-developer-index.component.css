@@ -2,7 +2,7 @@
 	Primary bg color 
 =====================*/
 :root{
-	--primary: #ffbf36;
+	--primary: #2596be;
 }
 /* Hex */
 .menuleft:after,
@@ -15,7 +15,7 @@ a.bg-primary:hover,
 .site-button,
 .owl-theme.dots-style-1 .owl-dots .owl-dot.active span, 
 .owl-theme.dots-style-1 .owl-dots .owl-dot:hover span{
-    background-color: #ffbf36;
+    background-color: #2596be;
 }
 /*Hex color :hover */
 .site-button:active,
@@ -25,7 +25,7 @@ a.bg-primary:hover,
 .bg-primary-dark,
 .sidenav .closebtn:hover,
 .style-2 .dez-social-icon.dez-border li a:hover{
-    background-color: #ffb820;
+    background-color: #2596be;
 }
 /*===================== 
 	Premery text color 
@@ -42,7 +42,7 @@ a,
 .resume-tag .resume-tag-btn strong,
 .knowledge-tag li:after,
 .site-filters .active > [class*="site-button"]{
-    color: #ffbf36;
+    color: #2596be;
 }
 
 /*===================== 
@@ -52,12 +52,12 @@ a,
 .timeline .box-left:after,
 .site-button.outline,
 .dez-countdown .date .time{
-	border-color:#ffbf36;
+	border-color:#2596be;
 }
 
 .lg-outer .lg-thumb-item.active, 
 .lg-outer .lg-thumb-item:hover{
-	border-color: #ffbf36;
+	border-color: #2596be;
 }
 /* Gradiyant Bottom To Top */
 .dlab-gallery-box:after,
@@ -66,17 +66,17 @@ a,
 .text-gradient,
 .resume-user .site-button,
 .extra-nav ul li a.menu-btn{
-    background-image: linear-gradient(to top,#ffb820 0,#ffbf36 100%,#ffb820 100%);
+    background-image: linear-gradient(to top,#2596be 0,#2596be 100%,#2596be 100%);
     background-size: 200%;
 }
 .contact-form .form-group:after,
 .button-gradient, 
 .progress-bar{
-    background-image: linear-gradient(to right,#ffb820 0,#ffbf36 100%,#ffb820 500%);
+    background-image: linear-gradient(to right,#2596be 0,#2596be 100%,#2596be 500%);
     background-size: 200%;
 }
 svg.radial-progress:nth-of-type(6n+1) circle{
-	stroke: #ffbf36;
+	stroke: #2596be;
 }
 .resume-tag .resume-tag-btn,
 .knowledge-tag li{
